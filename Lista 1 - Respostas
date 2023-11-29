@@ -1,0 +1,17 @@
+1- Para dividir o valor de tarefas para cada um, pode-se dividir a quantidade de tarefas
+pelo número de núcleos: Tarefa = n/p. 
+Quando esse valor for divisível: Cada núcleo terá seu número único começando do zero (Eu)
+    Onde eu começo?(Meu_Pri): ((Eu+1)*Tarefa)-(Tarefa).
+    Onde eu paro(Meu_Ult)? ((Eu+1)*Tarefa)-1; 
+    Meu_Pri ((0+1)*5)-1 Tarefa 4.
+    Meu_Ult (0+1)*5)-(5)= Tarefa 0.
+Quando o valor não for divisível: Recebe-se o resto. Sabendo que ele é menor que a quantidade
+de núcleos, soma-se 1 operação para cada núcleo que tiver seu número menor ou igual ao resto.
+Ou seja, para eles, Tarefa++.
+    (Tem resto?) E (Eu sou menor ou igual ao resto?) 
+        Sim!
+        Onde eu começo?(Meu_Pri): ((Eu+1)*(Tarefa+1))-(Tarefa+1).
+        Onde eu paro(Meu_Ult)? ((Eu+1)*(Tarefa+1)-1; 
+        Não!
+        O que foi explicado lá encima.
+        
