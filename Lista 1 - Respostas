@@ -1,6 +1,0 @@
-1- 
-T= n/p 
-R= n%p
-Meu_pri= X < R ? X*(T+1): (T*I) + R;    
-Meu_ult = X >= R ? Meu_pri+T : Meu_pri+T+1;
-Meu_desl = 1
